@@ -31,7 +31,7 @@ const PulseKeyFrames = styled.div`
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 `;
-const BodyComp = props => {
+const BodyComp = () => {
   return (
     <Padding>
       <Jumbotron fluid>
