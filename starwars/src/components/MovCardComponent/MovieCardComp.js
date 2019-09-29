@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardText, CardBody, CardTitle } from "reactstrap";
 
-const MovieComp = ({ title, opening_crawl }) => {
+const MovieCardComp = ({ title, opening_crawl }) => {
   return (
     <Card>
       <CardBody>
@@ -15,4 +15,4 @@ const MovieComp = ({ title, opening_crawl }) => {
   );
 };
 
-export default MovieComp;
+export default MovieCardComp;

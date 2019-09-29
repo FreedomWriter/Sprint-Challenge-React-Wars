@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardText, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 
-const CardComp = ({ name, birthyear, eye }) => {
+const CharCardComp = ({ name, birthyear, eye }) => {
   return (
     <Card>
       <CardBody>
@@ -15,4 +15,4 @@ const CardComp = ({ name, birthyear, eye }) => {
   );
 };
 
-export default CardComp;
+export default CharCardComp;
