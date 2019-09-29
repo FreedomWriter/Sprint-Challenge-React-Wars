@@ -19,6 +19,7 @@ export default function FindChar(props) {
   return (
     <div>
       {char.map((name, index) => {
+        //helper variables set to aid in making a call to wiki
         let thisName = name.name;
         let thisLink = "https://en.wikipedia.org/wiki/" + thisName;
         return (

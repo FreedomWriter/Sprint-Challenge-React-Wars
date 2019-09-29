@@ -19,6 +19,7 @@ export default function FindMov(props) {
   return (
     <div>
       {selectFilm.map((title, index) => {
+        //helper variables set to aid in making a call to wiki
         let thisTitle = title.title;
         let thisLink = "https://en.wikipedia.org/wiki/" + thisTitle;
         return (

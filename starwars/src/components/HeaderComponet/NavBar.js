@@ -16,30 +16,35 @@ import FindChar from "../FindComponent/FindChar";
 import FindMov from "../FindComponent/FindMov";
 
 export default function NavBar() {
+  {
+    /*This is the menu list toggle in the nav bar*/
+  }
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+  {
+    /*End of Nav menu list toggle in the nav bar*/
+  }
+
+  {
+    /*Logic which handles the conditional rendering returned in the JSX */
+  }
   const [showCharContent, setShowCharContent] = useState(false);
   const [showMovContent, setShowMovContent] = useState(false);
 
   function toggleCharContentHandler() {
     const doesCharShow = showCharContent;
     setShowCharContent(!doesCharShow);
-    if (doesCharShow === true) {
-      setShowMovContent(false);
-    }
   }
   function toggleMovContentHandler() {
     const doesMovShow = showMovContent;
     setShowMovContent(!doesMovShow);
   }
-
-  function selectCharHandler() {
-    console.log(" from the select handler");
+  {
+    /*End of cpnditional rendering logic */
   }
-
   return (
     <div>
       <div>
@@ -56,7 +61,7 @@ export default function NavBar() {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>Learn More</DropdownItem>
-                  <FindChar onClick={selectCharHandler} />
+                  <FindChar />
                   <DropdownItem divider />
                   <DropdownItem onClick={toggleCharContentHandler}>
                     Show/Hide Character Cards
@@ -82,6 +87,7 @@ export default function NavBar() {
       </div>
 
       <div>
+        {/*Conditional rendering to determine whether Character or Movie Cards will show */}
         {showCharContent ? (
           <div>
             <CharCardList />
