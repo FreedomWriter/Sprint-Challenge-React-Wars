@@ -47,44 +47,42 @@ export default function NavBar() {
   }
   return (
     <div>
-      <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="https://reactjs.org/docs/getting-started.html">
-            ReactWars
-          </NavbarBrand>
-          <NavbarToggler onClick={toggle} />
-          <Collapse isOpen={isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Characters
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>Learn More</DropdownItem>
-                  <FindChar />
-                  <DropdownItem divider />
-                  <DropdownItem onClick={toggleCharContentHandler}>
-                    Show/Hide Character Cards
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <UncontrolledDropdown>
-                <DropdownToggle nav caret>
-                  Movies
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>Learn More</DropdownItem>
-                  <FindMov />
-                  <DropdownItem divider />
-                  <DropdownItem onClick={toggleMovContentHandler}>
-                    Show All/Hide Movie Summaries
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-            </Nav>
-          </Collapse>
-        </Navbar>
-      </div>
+      <Navbar color="light" light expand="md">
+        <NavbarBrand href="https://reactjs.org/docs/getting-started.html">
+          ReactWars
+        </NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="ml-auto" navbar>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                Characters
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem>Learn More</DropdownItem>
+                <FindChar />
+                <DropdownItem divider />
+                <DropdownItem onClick={toggleCharContentHandler}>
+                  Show/Hide Character Cards
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+            <UncontrolledDropdown>
+              <DropdownToggle nav caret>
+                Movies
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem>Learn More</DropdownItem>
+                <FindMov />
+                <DropdownItem divider />
+                <DropdownItem onClick={toggleMovContentHandler}>
+                  Show All/Hide Movie Summaries
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+          </Nav>
+        </Collapse>
+      </Navbar>
 
       <div>
         {/*Conditional rendering to determine whether Character or Movie Cards will show */}

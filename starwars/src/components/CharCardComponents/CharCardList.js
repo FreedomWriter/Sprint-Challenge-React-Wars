@@ -27,7 +27,7 @@ export default function CharCardList(props) {
       <Row>
         {char.map((character, index) => {
           return (
-            <Col xs="6">
+            <Col xs="12">
               <Wrapper>
                 <CharCardComp
                   //   key={character.id}
